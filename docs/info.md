@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Testing out things for Jane Street ASIC Puzzle
 
 ## How to test
 
-Explain how to use your project
+Not much to test right now
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+nothing
