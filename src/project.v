@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024 Your Name
+ * Copyright (c) 2024 Ronav Pattanaik
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -17,9 +17,12 @@ module tt_um_bloodtigerx (
 );
 
   // All output pins must be assigned. If not used, assign to 0.
-  assign uo_out  = ui_in + uio_in;  // Example: ou_out is the sum of ui_in and uio_in
+  assign uo_out = ui_in + uio_in; //transmitter
+  //assign uo_out[0]  =  0; //transmitter
+  // assign uo_out[1]  =  0; //busy
+  // assign uo_out[7:2] =  0; //unused
   assign uio_out = 0;
-  assign uio_oe  = 0;
+  assign uio_oe  = 8'b00000000;  // All IOs are inputs
 
   // List all unused inputs to prevent warnings
   wire _unused = &{ena, clk, rst_n, 1'b0};
